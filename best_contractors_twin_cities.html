@@ -27,7 +27,15 @@
   button:hover { background: #1e3a8a; }
   .note { font-size: 0.85rem; color: #64748b; text-align: center; margin-top: 14px; }
   .benefits { max-width: 720px; margin: 0 auto 48px; padding: 0 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .benefit { background: white; padding: 18px; border-radius: 12px; font-size: 0.95rem; }
+  .process { max-width: 900px; margin: 0 auto 48px; padding: 0 16px; }
+  .process h2 { text-align: center; margin-bottom: 24px; }
+  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .step { background: white; padding: 20px; border-radius: 12px; text-align: center; }
+  .num { width: 36px; height: 36px; background: #1e40af; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-weight: 700; }
+  .step h3 { margin: 0 0 8px; font-size: 1rem; }
+  .step p { margin: 0; font-size: 0.9rem; color: #475569; }
+  @media (max-width: 700px) { .steps { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 500px) { .steps { grid-template-columns: 1fr; } }
   @media (max-width: 600px) { .benefits { grid-template-columns: 1fr; } .hero h1 { font-size: 1.8rem; } }
 </style>
 </head>
@@ -96,6 +104,35 @@
   <div class="benefits">
     <div class="benefit"><strong>Exclusive Matching</strong><br>One contractor receives your request — not five.</div>
     <div class="benefit"><strong>Full Twin Cities</strong><br>Minneapolis, St. Paul, and all surrounding suburbs.</div>
+    <div class="benefit"><strong>Licensed & Insured</strong><br>Contractors are verified before they receive leads.</div>
+    <div class="benefit"><strong>No Phone Blow-Up</strong><br>One contractor contacts you. No shared leads.</div>
+  </div>
+
+  <div class="process">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="num">1</div>
+        <h3>Tell Us What You Need</h3>
+        <p>Fill out the short form above with your project details and ZIP code.</p>
+      </div>
+      <div class="step">
+        <div class="num">2</div>
+        <h3>We Match You</h3>
+        <p>Your request goes to one verified local contractor who handles your type of work.</p>
+      </div>
+      <div class="step">
+        <div class="num">3</div>
+        <h3>One Contractor Calls</h3>
+        <p>Only that contractor contacts you. No shared leads. Your phone stays quiet.</p>
+      </div>
+      <div class="step">
+        <div class="num">4</div>
+        <h3>Get the Work Done</h3>
+        <p>Schedule the job directly with the contractor. We stay out of the way.</p>
+      </div>
+    </div>
+  </div>
     <div class="benefit"><strong>Licensed Pros</strong><br>Vetted local contractors for water, mold, and remodeling.</div>
     <div class="benefit"><strong>Fast Response</strong><br>Urgent requests are prioritized for same-day contact.</div>
   </div>
