@@ -56,22 +56,77 @@ def submit():
     </html>
     """
 
+@app.route("/admin")
+def admin():
+    if not leads:
+        return """
+        <div style="font-family:system-ui; max-width:900px; margin:40px auto; padding:20px;">
+          <h1>Best Contractors Admin</h1>
+          <p>No leads yet.</p>
+          <a href="/">Back to form</a>
+        </div>
+        """
+    rows = ""
+    for i, l in enumerate(reversed(leads)):
+        idx = len(leads) - 1 - i
+        status_color = {"New": "#fef9c3", "Contacted": "#dbeafe", "Sold": "#dcfce7", "Lost": "#fee2e2"}.get(l.get("status","New"), "#f1f5f9")
+        rows += f"""
+        <tr style="background:{status_color}">
+          <td>{l.get('created')}</td>
+          <td>{l.get('service_type','')}</td>
+          <td>{l.get('urgency','')}</td>
+          <td>{l.get('zip','')}</td>
+          <td>{l.get('name','')}<br><small>{l.get('phone','')}<br>{l.get('email','')}</small></td>
+          <td>{l.get('details','')[:80]}</td>
+          <td>
+            <form method="POST" action="/update_status" style="display:inline;">
+              <input type="hidden" name="idx" value="{idx}">
+              <select name="status" onchange="this.form.submit()">
+                <option {'selected' if l.get('status')=='New' else ''}>New</option>
+                <option {'selected' if l.get('status')=='Contacted' else ''}>Contacted</option>
+                <option {'selected' if l.get('status')=='Sold' else ''}>Sold</option>
+                <option {'selected' if l.get('status')=='Lost' else ''}>Lost</option>
+              </select>
+            </form>
+          </td>
+        </tr>
+        """
+    return f"""
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>Admin — Best Contractors</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        body {{ font-family: system-ui, sans-serif; max-width: 1100px; margin: 30px auto; padding: 16px; background: #f8fafc; }}
+        table {{ width: 100%; border-collapse: collapse; background: white; }}
+        th, td {{ padding: 10px; border-bottom: 1px solid #e2e8f0; text-align: left; font-size: 0.9rem; vertical-align: top; }}
+        th {{ background: #0f172a; color: white; }}
+        a {{ color: #1e40af; }}
+      </style>
+    </head>
+    <body>
+      <h1>Best Contractors Admin</h1>
+      <p><a href="/">Homeowner form</a> · Total leads: {len(leads)}</p>
+      <table>
+        <tr><th>Received</th><th>Service</th><th>Urgency</th><th>ZIP</th><th>Contact</th><th>Details</th><th>Status</th></tr>
+        {rows}
+      </table>
+    </body>
+    </html>
+    """
+
+@app.route("/update_status", methods=["POST"])
+def update_status():
+    idx = int(request.form.get("idx", -1))
+    new_status = request.form.get("status")
+    if 0 <= idx < len(leads) and new_status in ("New", "Contacted", "Sold", "Lost"):
+        leads[idx]["status"] = new_status
+    return redirect("/admin")
+
 @app.route("/leads")
 def view_leads():
-    if not leads:
-        return "<h2>No leads yet</h2><a href='/'>Back</a>"
-    rows = "".join(
-        f"<tr><td>{l.get('created')}</td><td>{l.get('service_type')}</td><td>{l.get('zip')}</td><td>{l.get('name')}</td><td>{l.get('phone')}</td></tr>"
-        for l in reversed(leads)
-    )
-    return f"""
-    <h2>Leads</h2>
-    <table border="1" cellpadding="8">
-      <tr><th>Time</th><th>Service</th><th>ZIP</th><th>Name</th><th>Phone</th></tr>
-      {rows}
-    </table>
-    <p><a href="/">Back</a></p>
-    """
+    return redirect("/admin")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
