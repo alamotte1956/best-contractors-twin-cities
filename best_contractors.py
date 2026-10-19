@@ -2,11 +2,15 @@
 Best Contractors in Twin Cities
 Homeowner landing page and lead intake server.
 """
-from flask import Flask, request, redirect, render_template_string
+from flask import Flask, request, redirect, render_template_string, session
 import os
 from datetime import datetime
 
 app = Flask(__name__)
+app.secret_key = os.environ.get("SECRET_KEY", "best-contractors-admin-2026")
+
+ADMIN_USER = os.environ.get("ADMIN_USER", "admin")
+ADMIN_PASS = os.environ.get("ADMIN_PASS", "changeme123")
 
 # Serve the landing page
 @app.route("/")
@@ -56,8 +60,49 @@ def submit():
     </html>
     """
 
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        if request.form.get("username") == ADMIN_USER and request.form.get("password") == ADMIN_PASS:
+            session["admin"] = True
+            return redirect("/admin")
+        return "<h2>Login failed</h2><p><a href='/login'>Try again</a></p>"
+    return """
+    <!DOCTYPE html>
+    <html>
+    <head><title>Admin Login</title>
+    <style>
+      body { font-family: system-ui; max-width: 400px; margin: 80px auto; padding: 20px; }
+      input { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 6px; }
+      button { width: 100%; padding: 12px; background: #1e40af; color: white; border: none; border-radius: 6px; font-size: 16px; }
+    </style>
+    </head>
+    <body>
+      <h2>Best Contractors Admin</h2>
+      <form method="POST">
+        <input name="username" placeholder="Username" required>
+        <input name="password" type="password" placeholder="Password" required>
+        <button type="submit">Log in</button>
+      </form>
+    </body>
+    </html>
+    """
+
+@app.route("/logout")
+def logout():
+    session.pop("admin", None)
+    return redirect("/login")
+
+def require_admin():
+    if not session.get("admin"):
+        return redirect("/login")
+    return None
+
 @app.route("/admin")
 def admin():
+    redir = require_admin()
+    if redir:
+        return redir
     if not leads:
         return """
         <div style="font-family:system-ui; max-width:900px; margin:40px auto; padding:20px;">
@@ -107,7 +152,7 @@ def admin():
     </head>
     <body>
       <h1>Best Contractors Admin</h1>
-      <p><a href="/">Homeowner form</a> · Total leads: {len(leads)}</p>
+      <p><a href="/">Homeowner form</a> · <a href="/logout">Log out</a> · Total leads: {len(leads)}</p>
       <table>
         <tr><th>Received</th><th>Service</th><th>Urgency</th><th>ZIP</th><th>Contact</th><th>Details</th><th>Status</th></tr>
         {rows}
@@ -118,6 +163,9 @@ def admin():
 
 @app.route("/update_status", methods=["POST"])
 def update_status():
+    redir = require_admin()
+    if redir:
+        return redir
     idx = int(request.form.get("idx", -1))
     new_status = request.form.get("status")
     if 0 <= idx < len(leads) and new_status in ("New", "Contacted", "Sold", "Lost"):
