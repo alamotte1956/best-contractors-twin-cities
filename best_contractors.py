@@ -5,12 +5,14 @@ Homeowner landing page and lead intake server.
 from flask import Flask, request, redirect, render_template_string, session
 import os
 from datetime import datetime
+import requests
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "best-contractors-admin-2026")
 
 ADMIN_USER = os.environ.get("ADMIN_USER", "admin")
 ADMIN_PASS = os.environ.get("ADMIN_PASS", "changeme123")
+SALES_URL = os.environ.get("SALES_URL", "https://best-leads-sales-production.up.railway.app")
 
 # Serve the landing page
 @app.route("/")
@@ -27,6 +29,22 @@ def submit():
     data["created"] = datetime.now().strftime("%Y-%m-%d %H:%M")
     data["status"] = "New"
     leads.append(data)
+
+    # Auto-send to sales database
+    try:
+        price = 125  # default price — adjust as needed
+        requests.post(f"{SALES_URL}/add_lead", data={
+            "service_type": data.get("service_type", ""),
+            "urgency": data.get("urgency", ""),
+            "zip": data.get("zip", ""),
+            "name": data.get("name", ""),
+            "phone": data.get("phone", ""),
+            "email": data.get("email", ""),
+            "score": 75,
+            "price": price,
+        }, timeout=5)
+    except Exception:
+        pass  # still show thank-you even if sales post fails
     # Thank-you page with conversion tracking
     return f"""
     <!DOCTYPE html>
