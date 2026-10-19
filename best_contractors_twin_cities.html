@@ -1,140 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Best Contractors in Twin Cities</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1005055868"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'AW-1005055868');
-</script>
-<style>
-  * { box-sizing: border-box; }
-  body { margin: 0; font-family: system-ui, -apple-system, sans-serif; background: #f8fafc; color: #1e293b; }
-  .hero { background: linear-gradient(135deg, #0f172a 0%, #1e40af 100%); color: white; padding: 64px 20px 48px; text-align: center; }
-  .hero h1 { font-size: 2.4rem; margin: 0 0 12px; letter-spacing: -0.5px; }
-  .hero p { font-size: 1.15rem; max-width: 640px; margin: 0 auto 24px; opacity: 0.95; }
-  .trust { display: flex; justify-content: center; gap: 32px; flex-wrap: wrap; font-size: 0.95rem; }
-  .container { max-width: 720px; margin: -40px auto 48px; padding: 0 16px; }
-  .card { background: white; border-radius: 16px; padding: 36px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
-  label { display: block; margin: 18px 0 6px; font-weight: 600; font-size: 0.95rem; }
-  input, select, textarea { width: 100%; padding: 13px 14px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 16px; }
-  button { width: 100%; background: #1e40af; color: white; border: none; padding: 16px; border-radius: 8px; font-size: 18px; font-weight: 600; cursor: pointer; margin-top: 22px; }
-  button:hover { background: #1e3a8a; }
-  .note { font-size: 0.85rem; color: #64748b; text-align: center; margin-top: 14px; }
-  .benefits { max-width: 720px; margin: 0 auto 48px; padding: 0 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .process { max-width: 900px; margin: 0 auto 48px; padding: 0 16px; }
-  .process h2 { text-align: center; margin-bottom: 24px; }
-  .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
-  .step { background: white; padding: 20px; border-radius: 12px; text-align: center; }
-  .num { width: 36px; height: 36px; background: #1e40af; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px; font-weight: 700; }
-  .step h3 { margin: 0 0 8px; font-size: 1rem; }
-  .step p { margin: 0; font-size: 0.9rem; color: #475569; }
-  @media (max-width: 700px) { .steps { grid-template-columns: 1fr 1fr; } }
-  @media (max-width: 500px) { .steps { grid-template-columns: 1fr; } }
-  @media (max-width: 600px) { .benefits { grid-template-columns: 1fr; } .hero h1 { font-size: 1.8rem; } }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Best Contractors Twin Cities — One Pro. No Shared Leads.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: #0f172a; background: #fff; }
+    .nav { padding: 20px 32px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9; }
+    .logo { font-weight: 700; font-size: 1.2rem; }
+    .hero { background: linear-gradient(160deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 100px 24px 80px; text-align: center; }
+    .hero h1 { font-size: 3rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom: 16px; line-height: 1.1; }
+    .hero p { font-size: 1.25rem; opacity: 0.9; max-width: 580px; margin: 0 auto 36px; }
+    .badges { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-bottom: 36px; }
+    .badge { background: rgba(255,255,255,0.12); backdrop-filter: blur(4px); padding: 8px 18px; border-radius: 999px; font-size: 0.9rem; font-weight: 500; }
+    .cta { display: inline-block; background: #0ea5e9; color: white; padding: 18px 36px; border-radius: 10px; font-weight: 600; text-decoration: none; font-size: 1.1rem; transition: transform 0.15s; }
+    .cta:hover { transform: translateY(-1px); background: #0284c7; }
+    .section { max-width: 960px; margin: 0 auto; padding: 80px 24px; }
+    h2 { text-align: center; font-size: 2rem; margin-bottom: 12px; }
+    .sub { text-align: center; color: #64748b; margin-bottom: 48px; }
+    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; }
+    .step { text-align: center; }
+    .num { width: 48px; height: 48px; background: #0ea5e9; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-weight: 700; font-size: 1.2rem; }
+    .form-wrap { background: #f8fafc; padding: 80px 24px; }
+    .form-card { background: white; border-radius: 20px; padding: 40px; max-width: 500px; margin: 0 auto; box-shadow: 0 4px 24px rgba(0,0,0,0.06); }
+    label { display: block; font-weight: 500; margin: 18px 0 6px; font-size: 0.95rem; }
+    input, select { width: 100%; padding: 14px; border: 1px solid #e2e8f0; border-radius: 10px; font-size: 1rem; }
+    button { width: 100%; background: #0ea5e9; color: white; border: none; padding: 16px; border-radius: 10px; font-size: 1.05rem; font-weight: 600; margin-top: 24px; cursor: pointer; }
+    button:hover { background: #0284c7; }
+    .trust { text-align: center; padding: 48px 24px; color: #64748b; font-size: 0.95rem; }
+  </style>
 </head>
 <body>
+  <div class="nav">
+    <div class="logo">Best Contractors</div>
+    <a href="#form" style="color:#0ea5e9; font-weight:600; text-decoration:none;">Get Help</a>
+  </div>
   <div class="hero">
-    <h1>Best Contractors in Twin Cities</h1>
-    <p>Get matched with one licensed local contractor for water damage, mold, remodeling, and home repairs. <strong>No shared leads.</strong> Your phone will not blow up with calls from multiple companies.</p>
-    <div class="trust">
-      <span>✓ No Shared Leads</span>
-      <span>✓ One Contractor Only</span>
-      <span>✓ Your Phone Stays Quiet</span>
+    <h1>One Contractor.<br>No Shared Leads.</h1>
+    <p>Water damage, mold, or remodeling in the Twin Cities. We match you with one licensed local pro. Your phone stays quiet.</p>
+    <div class="badges">
+      <span class="badge">No Shared Leads</span>
+      <span class="badge">Licensed & Insured</span>
+      <span class="badge">Twin Cities Only</span>
     </div>
+    <a href="#form" class="cta">Get My Contractor</a>
   </div>
-
-  <div class="container">
-    <div class="card">
-      <form method="POST" action="/submit">
-        <label>What do you need? *</label>
-        <select name="service_type" required>
-          <option value="">Select...</option>
-          <option value="water_damage">Water Damage Restoration</option>
-          <option value="dry_out">Dry Out Services</option>
-          <option value="mold_mitigation">Mold Mitigation</option>
-          <option value="mold_inspection">Mold Inspection</option>
-          <option value="mold_remediation">Mold Remediation</option>
-          <option value="iaq_testing">Indoor Air Quality Testing</option>
-          <option value="remodeling">Home Remodeling</option>
-          <option value="other">Other Home Repair</option>
-        </select>
-
-        <label>How soon do you need help? *</label>
-        <select name="urgency" required>
-          <option value="emergency">Emergency (active damage)</option>
-          <option value="asap">ASAP (within 24–48 hours)</option>
-          <option value="this_week">This week</option>
-          <option value="planning">Planning / getting quotes</option>
-        </select>
-
-        <label>ZIP code *</label>
-        <input type="text" name="zip" pattern="[0-9]{5}" required placeholder="55401">
-
-        <label>Your name *</label>
-        <input type="text" name="name" required>
-
-        <label>Phone *</label>
-        <input type="tel" name="phone" required placeholder="(612) 555-1234">
-
-        <label>Email *</label>
-        <input type="email" name="email" required>
-
-        <label>Are you the decision maker?</label>
-        <select name="decision_maker">
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-
-        <label>Project details</label>
-        <textarea name="details" rows="4" placeholder="Describe the issue or project. What happened? What do you need done?"></textarea>
-
-        <button type="submit">Get Matched with a Contractor</button>
-        <p class="note"><strong>No shared leads.</strong> Your request is automatically matched to one licensed contractor. Your phone will not blow up with calls.</p>
-      </form>
-    </div>
-  </div>
-
-  <div class="benefits">
-    <div class="benefit"><strong>Exclusive Matching</strong><br>One contractor receives your request — not five.</div>
-    <div class="benefit"><strong>Full Twin Cities</strong><br>Minneapolis, St. Paul, and all surrounding suburbs.</div>
-    <div class="benefit"><strong>Licensed & Insured</strong><br>Contractors are verified before they receive leads.</div>
-    <div class="benefit"><strong>No Phone Blow-Up</strong><br>One contractor contacts you. No shared leads.</div>
-  </div>
-
-  <div class="process">
+  <div class="section">
     <h2>How It Works</h2>
+    <p class="sub">Simple. Exclusive. Fast.</p>
     <div class="steps">
       <div class="step">
         <div class="num">1</div>
-        <h3>Tell Us What You Need</h3>
-        <p>Fill out the short form above with your project details and ZIP code.</p>
+        <strong>Tell Us</strong>
+        <p style="color:#64748b; margin-top:8px;">Describe the job and your ZIP code.</p>
       </div>
       <div class="step">
         <div class="num">2</div>
-        <h3>We Match You</h3>
-        <p>Your request goes to one verified local contractor who handles your type of work.</p>
+        <strong>We Match</strong>
+        <p style="color:#64748b; margin-top:8px;">One verified contractor is selected for you.</p>
       </div>
       <div class="step">
         <div class="num">3</div>
-        <h3>One Contractor Calls</h3>
-        <p>Only that contractor contacts you. No shared leads. Your phone stays quiet.</p>
-      </div>
-      <div class="step">
-        <div class="num">4</div>
-        <h3>Get the Work Done</h3>
-        <p>Schedule the job directly with the contractor. We stay out of the way.</p>
+        <strong>They Call</strong>
+        <p style="color:#64748b; margin-top:8px;">Only one pro contacts you. No phone blow-up.</p>
       </div>
     </div>
   </div>
-    <div class="benefit"><strong>Licensed Pros</strong><br>Vetted local contractors for water, mold, and remodeling.</div>
-    <div class="benefit"><strong>Fast Response</strong><br>Urgent requests are prioritized for same-day contact.</div>
+  <div class="form-wrap" id="form">
+    <div class="form-card">
+      <h2 style="text-align:left; font-size:1.6rem; margin-bottom:8px;">Request Help</h2>
+      <p style="color:#64748b; margin-bottom:20px;">Exclusive matching. One contractor only.</p>
+      <form method="POST" action="https://best-leads-sales-production.up.railway.app/add_lead">
+        <label>Service</label>
+        <select name="service_type" required>
+          <option value="water_damage">Water Damage</option>
+          <option value="mold_remediation">Mold Remediation</option>
+          <option value="mold_inspection">Mold Inspection</option>
+          <option value="dry_out">Dry Out</option>
+          <option value="iaq">Indoor Air Quality</option>
+        </select>
+        <label>Urgency</label>
+        <select name="urgency">
+          <option value="emergency">Emergency</option>
+          <option value="asap">ASAP</option>
+          <option value="this_week">This Week</option>
+        </select>
+        <label>ZIP Code</label>
+        <input name="zip" required placeholder="55406">
+        <label>Name</label>
+        <input name="name" required>
+        <label>Phone</label>
+        <input name="phone" required>
+        <label>Email</label>
+        <input name="email" type="email">
+        <input type="hidden" name="score" value="75">
+        <button type="submit">Get My Contractor</button>
+      </form>
+    </div>
   </div>
+  <div class="trust">Licensed local contractors only. No shared leads. Twin Cities metro.</div>
 </body>
 </html>
