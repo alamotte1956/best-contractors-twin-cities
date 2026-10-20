@@ -30,10 +30,11 @@ def consumer_agreement():
       <li>You request that one licensed and insured contractor contact you about the project described.</li>
       <li>Your contact information will be shared only with the single contractor matched to your request. It will not be shared with multiple companies.</li>
       <li>You understand this is not a contract for work. Any work agreement is between you and the contractor.</li>
-      <li>You may cancel any verbal agreement with the contractor within three business days under Minnesota home solicitation sales law (Minn. Stat. § 325G.06–325G.11) if applicable.</li>
-      <li>You authorize the matched contractor to contact you by phone, text, or email regarding this request.</li>
-      <li>Restoration Contractors MN does not guarantee the quality of the contractor’s work. You should verify the contractor’s license and insurance before signing any contract.</li>
-      <li>This agreement is governed by the laws of the State of Minnesota.</li>
+      <li>If you later enter a contract for work at your home, you may have the right to cancel within three business days under Minnesota’s Home Solicitation Sales Act (Minn. Stat. §§ 325G.06–325G.11).</li>
+      <li>You authorize the matched contractor to contact you by phone, text, or email regarding this request, consistent with the Telephone Consumer Protection Act and Minnesota law.</li>
+      <li>The matched contractor must hold any license required for the work under Minnesota Statutes Chapter 326B and maintain required insurance.</li>
+      <li>Albert R LaMotte dba: Restoration Contractors MN does not guarantee the quality of the contractor’s work. You should verify the contractor’s license and insurance before signing any contract.</li>
+      <li>This agreement is governed by the laws of the State of Minnesota, including the Home Solicitation Sales Act and consumer protection statutes.</li>
     </ol>
     <p>By checking the box and submitting, you acknowledge that you have read and agree to these terms.</p>
     <p><a href="/">Back to form</a></p>
