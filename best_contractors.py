@@ -56,34 +56,7 @@ def submit():
     data["status"] = "New"
     leads.append(data)
 
-    # Auto-send to sales database with price based on qualification
-    try:
-        score = 40
-        if data.get("urgency") == "emergency":
-            score += 35
-        elif data.get("urgency") == "asap":
-            score += 25
-        elif data.get("urgency") == "this_week":
-            score += 10
-        if data.get("decision_maker") == "yes":
-            score += 10
-        if len(data.get("details", "")) > 30:
-            score += 10
-        if data.get("service_type") in ("water_damage", "mold_remediation", "dry_out"):
-            score += 5
-        score = min(score, 100)
-
-        # Price by score
-        if score >= 80:
-            price = 175
-        elif score >= 65:
-            price = 140
-        elif score >= 50:
-            price = 110
-        else:
-            price = 85
-
-        # Thank-you page with conversion tracking
+    # Thank-you page with conversion tracking
     return f"""
     <!DOCTYPE html>
     <html>
