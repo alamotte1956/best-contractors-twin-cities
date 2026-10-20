@@ -35,7 +35,8 @@ def consumer_agreement():
       <li>Albert R LaMotte dba: Restoration Contractors MN is a lead matching service only. It is not a contractor, does not perform work, and is not a party to any contract between you and a contractor.</li>
       <li>Contractors are independent businesses. We do not guarantee the quality, timing, or outcome of their work.</li>
       <li>You release Albert R LaMotte dba: Restoration Contractors MN from any claims arising from the contractor’s workmanship, delays, pricing, or any dispute with the contractor.</li>
-      <li>The service is provided “as is.” We do not warrant that a contractor will contact you or that the project will be completed.</li>
+      <li>You should verify the contractor’s Minnesota license and insurance before signing any work contract. License and insurance information is self-reported by the contractor.</li>
+      <li>Any dispute about the work or payment must be resolved directly with the contractor. Albert R LaMotte dba: Restoration Contractors MN is not a party to the dispute.</li>
       <li>This agreement is governed by the laws of the State of Minnesota, including the Home Solicitation Sales Act and consumer protection statutes.</li>
     </ol>
     <p>By checking the box and submitting, you acknowledge that you have read and agree to these terms.</p>
