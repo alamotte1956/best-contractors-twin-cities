@@ -37,7 +37,10 @@ def consumer_agreement():
       <li>You release Albert R LaMotte dba: Restoration Contractors MN from any claims arising from the contractor’s workmanship, delays, pricing, or any dispute with the contractor.</li>
       <li>You should verify the contractor’s Minnesota license and insurance before signing any work contract. License and insurance information is self-reported by the contractor.</li>
       <li>Any dispute about the work or payment must be resolved directly with the contractor. Albert R LaMotte dba: Restoration Contractors MN is not a party to the dispute.</li>
-      <li>This agreement is governed by the laws of the State of Minnesota, including the Home Solicitation Sales Act and consumer protection statutes.</li>
+      <li>This service is subject to Minnesota consumer protection laws, including the Minnesota Consumer Fraud Act (Minn. Stat. § 325F.69) and the Home Solicitation Sales Act (Minn. Stat. §§ 325G.06–325G.11).</li>
+      <li>You have the right to cancel any home solicitation contract with a contractor within three business days as provided by Minnesota law.</li>
+      <li>Albert R LaMotte dba: Restoration Contractors MN does not perform work and is not liable for contractor performance, pricing, or disputes.</li>
+      <li>Your personal information will be used only to match you with one contractor and will not be sold to third parties for marketing.</li>
     </ol>
     <p>By checking the box and submitting, you acknowledge that you have read and agree to these terms.</p>
     <p><a href="/">Back to form</a></p>
