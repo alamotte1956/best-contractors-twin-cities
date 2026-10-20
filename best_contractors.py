@@ -32,8 +32,10 @@ def consumer_agreement():
       <li>If you later enter a contract for work at your home, you may have the right to cancel within three business days under Minnesota’s Home Solicitation Sales Act (Minn. Stat. §§ 325G.06–325G.11).</li>
       <li>You authorize the matched contractor to contact you by phone, text, or email regarding this request, consistent with the Telephone Consumer Protection Act and Minnesota law.</li>
       <li>The matched contractor must hold any license required for the work under Minnesota Statutes Chapter 326B and maintain required insurance.</li>
-      <li>You understand that Albert R LaMotte dba: Restoration Contractors MN is a lead matching service only and is not a party to any work contract you may enter with a contractor.</li>
-      <li>You release Albert R LaMotte dba: Restoration Contractors MN from liability for the contractor’s workmanship, delays, or any disputes arising from the job.</li>
+      <li>Albert R LaMotte dba: Restoration Contractors MN is a lead matching service only. It is not a contractor, does not perform work, and is not a party to any contract between you and a contractor.</li>
+      <li>Contractors are independent businesses. We do not guarantee the quality, timing, or outcome of their work.</li>
+      <li>You release Albert R LaMotte dba: Restoration Contractors MN from any claims arising from the contractor’s workmanship, delays, pricing, or any dispute with the contractor.</li>
+      <li>The service is provided “as is.” We do not warrant that a contractor will contact you or that the project will be completed.</li>
       <li>This agreement is governed by the laws of the State of Minnesota, including the Home Solicitation Sales Act and consumer protection statutes.</li>
     </ol>
     <p>By checking the box and submitting, you acknowledge that you have read and agree to these terms.</p>
