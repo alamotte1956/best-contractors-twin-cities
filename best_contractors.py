@@ -85,7 +85,8 @@ def submit():
         <p style="background:#dcfce7; padding:12px; border-radius:8px; font-weight:600;">Your request has been submitted successfully.</p>
         <p>A licensed local contractor will contact you shortly.</p>
         <p>Your information was sent to one contractor only — no shared leads.</p>
-        <p><a href="/">Submit another request</a></p>
+        <p style="font-size:0.9rem; color:#64748b;">Your contact details are used only for this request and are not sold or shared with multiple companies.</p>
+        <p><a href="/">Submit another request</a> · <a href="/consumer_agreement">View agreement</a></p>
       </div>
     </body>
     </html>
