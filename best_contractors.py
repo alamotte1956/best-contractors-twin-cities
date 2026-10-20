@@ -5,7 +5,6 @@ Homeowner landing page and lead intake server.
 from flask import Flask, request, redirect, render_template_string, session
 import os
 from datetime import datetime
-import requests
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("SECRET_KEY", "best-contractors-admin-2026")
@@ -84,19 +83,7 @@ def submit():
         else:
             price = 85
 
-        requests.post(f"{SALES_URL}/add_lead", data={
-            "service_type": data.get("service_type", ""),
-            "urgency": data.get("urgency", ""),
-            "zip": data.get("zip", ""),
-            "name": data.get("name", ""),
-            "phone": data.get("phone", ""),
-            "email": data.get("email", ""),
-            "score": score,
-            "price": price,
-        }, timeout=5)
-    except Exception:
-        pass
-    # Thank-you page with conversion tracking
+        # Thank-you page with conversion tracking
     return f"""
     <!DOCTYPE html>
     <html>
