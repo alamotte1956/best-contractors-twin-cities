@@ -32,7 +32,8 @@ def consumer_agreement():
       <li>If you later enter a contract for work at your home, you may have the right to cancel within three business days under Minnesota’s Home Solicitation Sales Act (Minn. Stat. §§ 325G.06–325G.11).</li>
       <li>You authorize the matched contractor to contact you by phone, text, or email regarding this request, consistent with the Telephone Consumer Protection Act and Minnesota law.</li>
       <li>The matched contractor must hold any license required for the work under Minnesota Statutes Chapter 326B and maintain required insurance.</li>
-      <li>Albert R LaMotte dba: Restoration Contractors MN does not guarantee the quality of the contractor’s work. You should verify the contractor’s license and insurance before signing any contract.</li>
+      <li>You understand that Albert R LaMotte dba: Restoration Contractors MN is a lead matching service only and is not a party to any work contract you may enter with a contractor.</li>
+      <li>You release Albert R LaMotte dba: Restoration Contractors MN from liability for the contractor’s workmanship, delays, or any disputes arising from the job.</li>
       <li>This agreement is governed by the laws of the State of Minnesota, including the Home Solicitation Sales Act and consumer protection statutes.</li>
     </ol>
     <p>By checking the box and submitting, you acknowledge that you have read and agree to these terms.</p>
@@ -81,7 +82,8 @@ def submit():
     <body>
       <div class="card">
         <h2>Thank You, {data.get('name','')}!</h2>
-        <p>Your request has been received. A licensed local contractor will contact you shortly.</p>
+        <p style="background:#dcfce7; padding:12px; border-radius:8px; font-weight:600;">Your request has been submitted successfully.</p>
+        <p>A licensed local contractor will contact you shortly.</p>
         <p>Your information was sent to one contractor only — no shared leads.</p>
         <p><a href="/">Submit another request</a></p>
       </div>
