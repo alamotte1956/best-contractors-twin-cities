@@ -24,25 +24,24 @@ def consumer_agreement():
     <body>
     <h1>Consumer Agreement</h1>
     <p><strong>Albert R LaMotte dba: Restoration Contractors MN</strong></p>
-    <p>By submitting this form, you agree to the following under Minnesota law:</p>
+    <p>Last updated: October 21, 2026</p>
+    <p>By submitting this form, you agree to the following under the laws of the State of Minnesota:</p>
     <ol>
-      <li>You request that one licensed and insured contractor contact you about the project described.</li>
-      <li>Your contact information will be shared only with the single contractor matched to your request. It will not be shared with multiple companies.</li>
-      <li>You understand this is not a contract for work. Any work agreement is between you and the contractor.</li>
-      <li>If you later enter a contract for work at your home, you may have the right to cancel within three business days under Minnesota’s Home Solicitation Sales Act (Minn. Stat. §§ 325G.06–325G.11).</li>
-      <li>You authorize the matched contractor to contact you by phone, text, or email regarding this request, consistent with the Telephone Consumer Protection Act and Minnesota law.</li>
-      <li>The matched contractor must hold any license required for the work under Minnesota Statutes Chapter 326B and maintain required insurance.</li>
-      <li>Albert R LaMotte dba: Restoration Contractors MN is a lead matching service only. It is not a contractor, does not perform work, and is not a party to any contract between you and a contractor.</li>
-      <li>Contractors are independent businesses. We do not guarantee the quality, timing, or outcome of their work.</li>
-      <li>You release Albert R LaMotte dba: Restoration Contractors MN from any claims arising from the contractor’s workmanship, delays, pricing, or any dispute with the contractor.</li>
-      <li>You should verify the contractor’s Minnesota license and insurance before signing any work contract. License and insurance information is self-reported by the contractor.</li>
-      <li>Any dispute about the work or payment must be resolved directly with the contractor. Albert R LaMotte dba: Restoration Contractors MN is not a party to the dispute.</li>
-      <li>This service is subject to Minnesota consumer protection laws, including the Minnesota Consumer Fraud Act (Minn. Stat. § 325F.69) and the Home Solicitation Sales Act (Minn. Stat. §§ 325G.06–325G.11).</li>
-      <li>You have the right to cancel any home solicitation contract with a contractor within three business days as provided by Minnesota law.</li>
-      <li>Albert R LaMotte dba: Restoration Contractors MN does not perform work and is not liable for contractor performance, pricing, or disputes.</li>
-      <li>Your personal information will be used only to match you with one contractor and will not be sold to third parties for marketing.</li>
+      <li><strong>Matching Service Only.</strong> Albert R LaMotte dba: Restoration Contractors MN (“we,” “us”) provides a lead-matching service only. We are not a contractor, do not perform work, and are not a party to any contract between you and a contractor.</li>
+      <li><strong>Exclusive Matching.</strong> Your contact information will be shared only with the single independent contractor matched to your request. It will not be shared with multiple companies.</li>
+      <li><strong>No Work Contract.</strong> Submitting this form does not create a contract for work. Any agreement for services is solely between you and the independent contractor.</li>
+      <li><strong>Your Responsibility to Verify Insurance.</strong> You are solely responsible for verifying that the matched contractor maintains current general liability insurance and workers’ compensation insurance (if required) before allowing any work to begin. You must request and review the contractor’s certificates of insurance directly from the contractor or the contractor’s insurance carrier. Albert R LaMotte dba: Restoration Contractors MN does not verify, guarantee, or warrant the existence, amount, or validity of any contractor’s insurance.</li>
+      <li><strong>Your Responsibility to Verify License.</strong> You are solely responsible for verifying that the matched contractor holds any license required under Minnesota Statutes Chapter 326B for the work to be performed. License information displayed on this site is self-reported by the contractor.</li>
+      <li><strong>Independent Contractors.</strong> Contractors are independent businesses. We do not employ them, supervise their work, or guarantee the quality, timing, pricing, or outcome of their services.</li>
+      <li><strong>Release of Liability.</strong> You release and hold harmless Albert R LaMotte dba: Restoration Contractors MN from any and all claims, damages, losses, or disputes arising from or related to the contractor’s workmanship, delays, pricing, insurance coverage, licensing status, or any other matter between you and the contractor.</li>
+      <li><strong>Home Solicitation Sales Act.</strong> If you later enter a contract for work at your home, you may have the right to cancel within three business days under Minnesota’s Home Solicitation Sales Act (Minn. Stat. §§ 325G.06–325G.11). That right applies to your contract with the contractor, not to this matching service.</li>
+      <li><strong>Communications.</strong> You authorize the matched contractor to contact you by phone, text, or email regarding this request, consistent with the Telephone Consumer Protection Act and Minnesota law.</li>
+      <li><strong>Dispute Resolution.</strong> Any dispute about the work, payment, insurance, or performance must be resolved directly with the contractor. Albert R LaMotte dba: Restoration Contractors MN is not a party to the dispute and has no obligation to mediate or intervene.</li>
+      <li><strong>Consumer Protection Laws.</strong> This service is subject to Minnesota consumer protection laws, including the Minnesota Consumer Fraud Act (Minn. Stat. § 325F.69) and the Home Solicitation Sales Act (Minn. Stat. §§ 325G.06–325G.11).</li>
+      <li><strong>Privacy.</strong> Your personal information will be used only to match you with one contractor and will not be sold to third parties for marketing purposes.</li>
+      <li><strong>Governing Law.</strong> This agreement is governed by the laws of the State of Minnesota.</li>
     </ol>
-    <p>By checking the box and submitting, you acknowledge that you have read and agree to these terms.</p>
+    <p><strong>By checking the box and submitting this form, you acknowledge that you have read, understand, and agree to these terms, including your sole responsibility to verify the contractor’s liability insurance, workers’ compensation insurance, and licensing before any work begins.</strong></p>
     <p><a href="/">Back to form</a></p>
     </body>
     </html>
