@@ -48,6 +48,56 @@ def consumer_agreement():
     </html>
     """
 
+@app.route("/privacy")
+def privacy():
+    return """
+    <html>
+    <head><title>Privacy Policy — Restoration Contractors MN</title>
+    <style>body{font-family:system-ui;max-width:700px;margin:40px auto;padding:20px;line-height:1.6;}</style>
+    </head>
+    <body>
+    <h1>Privacy Policy</h1>
+    <p><strong>Albert R LaMotte dba: Restoration Contractors MN</strong></p>
+    <p>Last updated: October 20, 2026</p>
+    <h2>Information We Collect</h2>
+    <p>When you submit a request, we collect your name, phone number, email address, ZIP code, and project details.</p>
+    <h2>How We Use Information</h2>
+    <p>We use this information to match you with one licensed contractor. We do not sell your personal information to third parties for marketing.</p>
+    <h2>Sharing</h2>
+    <p>Your contact information is shared only with the single contractor matched to your request. It is not shared with multiple companies.</p>
+    <h2>Contact</h2>
+    <p>Questions about this policy: contact the site administrator.</p>
+    <p><a href="/">Back to form</a> · <a href="/terms">Terms & Conditions</a></p>
+    </body>
+    </html>
+    """
+
+@app.route("/terms")
+def terms():
+    return """
+    <html>
+    <head><title>Terms & Conditions — Restoration Contractors MN</title>
+    <style>body{font-family:system-ui;max-width:700px;margin:40px auto;padding:20px;line-height:1.6;}</style>
+    </head>
+    <body>
+    <h1>Terms & Conditions</h1>
+    <p><strong>Albert R LaMotte dba: Restoration Contractors MN</strong></p>
+    <p>Last updated: October 20, 2026</p>
+    <h2>Service</h2>
+    <p>We provide a lead-matching service. We are not a contractor and do not perform work. Any work agreement is between you and the independent contractor.</p>
+    <h2>Exclusive Matching</h2>
+    <p>Your request is sent to one contractor only. Your information is not shared with multiple companies.</p>
+    <h2>Your Responsibilities</h2>
+    <p>You should verify the contractor’s license and insurance before signing any work contract. You may have a three-day cancellation right under Minnesota’s Home Solicitation Sales Act if applicable.</p>
+    <h2>Limitation of Liability</h2>
+    <p>The service is provided “as is.” We are not liable for the quality, timing, or outcome of any contractor’s work.</p>
+    <h2>Governing Law</h2>
+    <p>These terms are governed by the laws of the State of Minnesota.</p>
+    <p><a href="/">Back to form</a> · <a href="/privacy">Privacy Policy</a></p>
+    </body>
+    </html>
+    """
+
 @app.route("/")
 def home():
     with open("best_contractors_twin_cities.html", "r", encoding="utf-8") as f:
