@@ -16,6 +16,8 @@ BASE_CSS = """
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: #0f172a; background: #fff; line-height: 1.5; }
 .nav { padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9; }
+.nav a { color: #0ea5e9; font-weight: 600; text-decoration: none; }
+.nav a:hover { text-decoration: underline; }
 .logo { font-weight: 700; font-size: 1.15rem; }
 .hero { background: linear-gradient(160deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 80px 20px 60px; text-align: center; }
 .hero h1 { font-size: 2.6rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; line-height: 1.15; }
@@ -52,7 +54,10 @@ HOME_HTML = """
   <style>""" + BASE_CSS + """</style>
 </head>
 <body>
-  <div class="nav"><div class="logo">Restoration Contractors MN</div></div>
+  <div class="nav">
+    <div class="logo">Restoration Contractors MN</div>
+    <a href="https://best-leads-sales-production.up.railway.app/signup" style="color:#0ea5e9;font-weight:600;text-decoration:none;">Contractor Signup</a>
+  </div>
   <div class="hero">
     <div class="badges">
       <span class="badge">Exclusive Match</span>
